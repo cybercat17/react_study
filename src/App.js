@@ -25,6 +25,12 @@ class App extends Component {
       students : students
     })
   }
+  componentDidMount() {
+    console.log('Component <App> mounted');
+  }
+  componentDidUpdate(prevProps, prevState) {
+    console.log(prevProps, prevState);
+  }
   render() {
     return (
       <div className="App">
